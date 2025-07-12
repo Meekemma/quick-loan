@@ -130,7 +130,7 @@ Tests include:
 
 * **Custom User Model**: Used instead of Django’s default to gain full control over user fields and behavior.
 * **Email Uniqueness**: The `email` field is set as unique, ensuring each account is tied to a single user.
-* **Email Verification**: Since no email backend is set up, users are marked as verified (`is_verified=True`) by default.
+* **Email Verification**: Since no email backend is set up to render OTP, users are marked as verified (`is_verified=True`) by default.
 * **Fraud Detection**:
 
   * More than 3 loan applications in 24 hours
