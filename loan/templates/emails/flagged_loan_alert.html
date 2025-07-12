@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2> A Loan Has Been Flagged</h2>
+    <p><strong>Loan ID:</strong> {{ loan.id }}</p>
+    <p><strong>User:</strong> {{ user_full_name }} ({{ user_email }})</p>
+    <p><strong>Amount:</strong> ₦{{ loan.amount_requested }}</p>
+    <p><strong>Status:</strong> {{ loan.status }}</p>
+
+    <h3>Reasons:</h3>
+    <ul>
+      {% for reason in reasons %}
+        <li>{{ reason }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+A loan has been flagged for potential fraud:
+
+Loan ID: {{ loan.id }}
+User: {{ user_full_name }} ({{ user_email }})
+Amount: ₦{{ loan.amount_requested }}
+Status: {{ loan.status }}
+
+Reasons:
+{% for reason in reasons %}
+- {{ reason }}
+{% endfor %}
